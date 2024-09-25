@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Desk Tickets</title>
+  <link rel="stylesheet" href="helpdesk.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <ul>
+      <li>All tickets</li>
+      <li>Unassigned tickets</li>
+      <li>My open tickets</li>
+      <li>Open</li>
+      <li>Pending</li>
+      <li>Solved</li>
+      <li>Closed</li>
+      <li>Spam</li>
+    </ul>
+  </div>
+
+  <!-- Ticket List -->
+  <div class="ticket-list">
+    <div class="header">
+      <input type="text" placeholder="Search in all tickets...">
+      <button>+ New ticket</button>
+    </div>
+
+    <table class="ticket-table">
+      <thead>
+        <tr>
+          <th>Requester</th>
+          <th>Subject</th>
+          <th>Assignee</th>
+          <th>Status</th>
+          <th>Last Message</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="user-initials">AM</span> ABHIRANJAN MISHRA</td>
+          <td>LAPTOP</td>
+          <td>HR</td>
+          <td><span class="status open">Open</span></td>
+          <td class="time-ago">4 seconds ago</td>
+        </tr>
+        <tr>
+          <td><span class="user-initials">AD</span> ABHA DIXIT</td>
+          <td>Order #345098</td>
+          <td>HR</td>
+          <td><span class="status open">Open</span></td>
+          <td class="time-ago">45 seconds ago</td>
+        </tr>
+        <tr>
+          <td><span class="user-initials">MS</span> Mohd Saqib</td>
+          <td>Happy feedback 😊</td>
+          <td>HR</td>
+          <td><span class="status open">Open</span></td>
+          <td class="time-ago">50 seconds ago</td>
+        </tr>
+        <tr>
+          <td><span class="user-initials">MY</span> Mangal Yaduv</td>
+          <td>Next license renewal</td>
+          <td>HR</td>
+          <td><span class="status solved">Solved</span></td>
+          <td class="time-ago">2 hours ago</td>
+        </tr>
+                                          
+        
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

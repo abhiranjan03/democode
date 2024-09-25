@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raise a Ticket</title>
+    <link rel="stylesheet" href="ticketrise.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Raise a Ticket</h1>
+        </div>
+
+        <div class="form-container">
+            <div class="left-panel">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="ticketByRequest">
+                    Ticket by request
+                </label>
+
+                <label for="category">Category</label>
+                <select id="category">
+                    <option value="problem">Problem</option>
+                    <option value="question">Question</option>
+                    <option value="feature">Feature Request</option>
+                </select>
+
+                <label for="priority">Priority</label>
+                <select id="priority">
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                    <option value="high">High</option>
+                </select>
+
+                <label for="group">Group</label>
+                <select id="group">
+                    <option value="default">Default</option>
+                    <option value="support">Support</option>
+                    <option value="billing">Billing</option>
+                </select>
+
+                <label for="agent">Agent</label>
+                <select id="agent">
+                    <option value="unassigned">Unassigned</option>
+                    <option value="agent1">Agent 1</option>
+                    <option value="agent2">Agent 2</option>
+                </select>
+            </div>
+
+            <div class="right-panel">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Enter subject here">
+
+                <label for="description">Description (Optional)</label>
+                <textarea id="description" placeholder="Enter description here"></textarea>
+
+                <div class="attachment">
+                    <label for="attach-file">Attach file</label>
+                    <input type="file" id="attach-file">
+                </div>
+
+                <button class="submit-btn">Submit a ticket</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
